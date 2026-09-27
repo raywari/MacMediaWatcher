@@ -1,0 +1,8 @@
+config.yaml
+watcher.log
+watcher_state.json
+watcher_state.tmp
+*.pyc
+__pycache__/
+.DS_Store
+.env

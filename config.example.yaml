@@ -1,0 +1,53 @@
+watch_dirs:
+  - ~/Downloads
+
+ignored_dirs:
+  - "TEMPLATES"
+  - "ASSETS"
+
+# Only process files inside subfolders with this name.
+# Leave empty to process all files in watch_dirs.
+target_folder: "DOWNLOADS"
+
+# File extensions to convert/extract
+target_extensions:
+  - .zip
+  - .avif
+  - .tif
+  - .tiff
+  - .svg
+
+# Video formats to extract from ZIP archives
+extract_extensions:
+  - .mp4
+  - .mov
+  - .mkv
+  - .avi
+  - .m4v
+  - .webm
+  - .prores
+
+# Max resolution for SVG to PNG conversion (pixels)
+svg_max_resolution: 2000
+
+# Number of parallel processing threads
+max_workers: 4
+
+# Main loop interval (seconds)
+main_loop_interval: 2
+
+# File stability check (wait until fully downloaded)
+stability_check_interval: 3
+stable_checks_required: 2
+
+# sips timeout (seconds)
+sips_timeout: 300
+
+# Retry on errors
+max_attempts: 3
+retry_delays:
+  - 30
+  - 90
+
+# Minimum free disk space required to process files (MB)
+min_free_space_mb: 500
